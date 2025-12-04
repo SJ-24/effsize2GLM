@@ -27,8 +27,4 @@ print(ex1$phi.x.z)
 print(ex1$R2.x.z)
 ```
 
-For a full walkthrough, open the vignette after installation:
-
-```r
-vignette("solicited-computation", package = "effsize2GLM")
-```
+See the `?obtainPhiAndR2` help page for the full set of worked examples.
