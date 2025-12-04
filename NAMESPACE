@@ -1,0 +1,2 @@
+export(obtainPhiAndR2)
+importFrom(stats, glm.fit, lm.wfit)
