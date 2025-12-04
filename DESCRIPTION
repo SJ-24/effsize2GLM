@@ -5,8 +5,8 @@ Version: 0.0.1
 Authors@R: person(given = "Paul", family = "Rathouz", role = c("aut", "cre"),
                   email = "paul@example.com")
 Description: Provides a utility to compute phi_{x|z} and R^2_{x|z} from
-    solicited design parameters under generalized linear models. Includes
-    example scripts demonstrating usage for binary and gamma-family models.
+    solicited design parameters under generalized linear models. Includes a
+    vignette demonstrating usage for binary and gamma-family models.
 License: MIT
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
@@ -14,3 +14,5 @@ RoxygenNote: 7.3.1
 Depends: R (>= 4.0.0)
 Imports: stats
 LazyData: true
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr

@@ -20,6 +20,16 @@ obtainPhiAndR2(piCP, muCMs, Zmat, fam = stats::gaussian(), dispersion = 1, XZmat
 List containing the supplied inputs, fitted linear predictors, fitted means,
 and computed effect size summaries \code{phi.x.z} and \code{R2.x.z}.
 }
+\examples{
+library(effsize2GLM)
+
+obtainPhiAndR2(
+  muCMs = c(.3, .2, .2),
+  piCP  = c(.3, .3, .4),
+  Zmat  = matrix(rep(1, 3), nrow = 3),
+  fam   = quasi(link = "logit", variance = "mu(1-mu)")
+)
+}
 \details{
 The function fits the specified GLM mean structures under the saturated
 and null models, then derives phi\_\{x|z\} and R2\_\{x|z\} using the

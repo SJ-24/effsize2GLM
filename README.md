@@ -27,4 +27,8 @@ print(ex1$phi.x.z)
 print(ex1$R2.x.z)
 ```
 
-See `inst/examples/solicComputation-4.R` for the full set of worked examples.
+For a full walkthrough, open the vignette after installation:
+
+```r
+vignette("solicited-computation", package = "effsize2GLM")
+```
