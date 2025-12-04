@@ -1,6 +1,6 @@
 \name{obtainPhiAndR2}
 \alias{obtainPhiAndR2}
-\title{Compute phi\_\{x|z\} and R2\_\{x|z\} from GLM design inputs}
+\title{Compute \eqn{\phi(x\mid z)} and \eqn{R^2(x\mid z)} from GLM design inputs}
 \description{
 Utility to translate solicited cell-level design parameters into
 effect size summaries under generalized linear model assumptions.

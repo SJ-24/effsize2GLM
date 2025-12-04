@@ -1,4 +1,4 @@
-##' Compute phi_{x|z} and R^2_{x|z} from GLM design inputs.
+##' Compute φ(x|z) and R²(x|z) from GLM design inputs.
 ##'
 ##' @param piCP Numeric vector of cell proportions. If values do not sum to 1,
 ##'   they are internally normalized.
@@ -42,14 +42,14 @@ obtainPhiAndR2 <- function(piCP, muCMs, Zmat,
   ## Cell weight variance.
   varD <- diag(piCP) - outer(piCP, piCP)
 
-  ## phi_{x|z} calculation.
+  ## φ(x|z) calculation.
   varEtaXZ <- t(etaCMxz - etaCMz) %*% varD %*% (etaCMxz - etaCMz)
   phi.x.z <- 2 * sqrt(varEtaXZ)
   EY <- muCMs %*% piCP
   w1 <- (1 / dispersion) * (1 / fam$variance(EY)) * fam$mu.eta(fam$linkfun(EY))^2
   f2.phi <- w1 * phi.x.z^2 / 4
 
-  ## R2_{x|z} calculation.
+  ## R²(x|z) calculation.
   muCMxz <- fam$linkinv(etaCMxz)
   muCMz <- fam$linkinv(etaCMz)
   vaCMxz <- fam$variance(muCMxz) * dispersion

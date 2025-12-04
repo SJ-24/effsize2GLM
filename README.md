@@ -1,6 +1,6 @@
 # effsize2GLM
 
-Utility function to compute phi_{x|z} and R^2_{x|z} from solicited design
+Utility function to compute φ(x|z) and R²(x|z) from solicited design
 parameters under GLM assumptions. Includes example scripts mirroring the
 original `solicComputation-4.R` demonstrations.
 
