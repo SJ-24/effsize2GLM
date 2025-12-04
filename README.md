@@ -9,7 +9,7 @@ original `solicComputation-4.R` demonstrations.
 ```r
 # from repository root
 if (!requireNamespace("devtools", quietly = TRUE)) install.packages("devtools")
-devtools::install_local(".")
+devtools::install_github("SJ-24/effsize2GLM")
 ```
 
 ## Usage
